@@ -157,7 +157,7 @@ PDFImage.prototype = {
         }).catch(function(error){
           reject(error);
         });
-      });
+      }).catch(reject);
     });
   },
   convertPage: function (pageNumber) {
